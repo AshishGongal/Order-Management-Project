@@ -1,0 +1,99 @@
+<div class="container add-student-container">
+    <div>
+      <mat-card>
+        <h3 style="text-align: center">Update Orders Data</h3>
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Order Name</mat-label>
+            <input matInput  [(ngModel)] ="order.order_name" />
+          </mat-form-field>
+        </div>
+  
+        <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Shipping Charge</mat-label>
+              <input matInput  [(ngModel)] ="order.shipping_charge" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Status</mat-label>
+              <input matInput  [(ngModel)] ="order.status" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Total Price</mat-label>
+              <input matInput  [(ngModel)] ="order.total_price" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Order Date</mat-label>
+              <input matInput  [(ngModel)] ="order.order_date" />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Customer Name</mat-label>
+              <input matInput [(ngModel)] ="order.customer.customer_name"/>
+            </mat-form-field>
+        </div>
+  
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Customer Contact (must have country code +91 | 91)</mat-label>
+            <input matInput [(ngModel)] ="order.customer.customer_contact"/>
+          </mat-form-field>
+      </div>
+  
+      <div>
+        <mat-form-field appearance="outline" class="form-element">
+          <mat-label>Customer Email </mat-label>
+          <input matInput [(ngModel)] ="order.customer.customer_email"/>
+        </mat-form-field>
+    </div>
+  
+    <div>
+      <mat-form-field appearance="outline" class="form-element">
+        <mat-label>Customer Address </mat-label>
+        <input matInput [(ngModel)] ="order.customer.customer_address"/>
+      </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field appearance="outline" class="form-element">
+      <mat-label>Pin </mat-label>
+      <input matInput [(ngModel)] ="order.customer.pin"/>
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field appearance="outline" class="form-element">
+      <mat-label>Product Name </mat-label>
+      <input matInput [(ngModel)] ="order.product.product_name"/>
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field appearance="outline" class="form-element">
+      <mat-label>Product Quantity </mat-label>
+      <input matInput [(ngModel)] ="order.product.product_quantity"/>
+    </mat-form-field>
+  </div>
+  
+  <div>
+    <mat-form-field appearance="outline" class="form-element">
+      <mat-label>Product Price </mat-label>
+      <input matInput [(ngModel)] ="order.product.product_price"/>
+    </mat-form-field>
+  </div>
+           <div>
+          <button mat-raised-button color="primary"  (click)="postData()">Update</button>
+        </div>
+      </mat-card>
+    </div>
+  </div>

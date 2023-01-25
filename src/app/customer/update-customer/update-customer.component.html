@@ -1,0 +1,45 @@
+<div class="container add-student-container">
+    <div>
+      <mat-card>
+        <h3 style="text-align: center">Update Customer Data</h3>
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>Customer Name</mat-label>
+            <input matInput  [(ngModel)] ="customer.customer_name" />
+          </mat-form-field>
+        </div>
+  
+        <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Customer Contact</mat-label>
+              <input matInput  [(ngModel)] ="customer.customer_contact" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Customer email</mat-label>
+              <input matInput  [(ngModel)] ="customer.customer_email" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>Customer Address</mat-label>
+              <input matInput  [(ngModel)] ="customer.customer_address" />
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>PinCode</mat-label>
+              <input matInput  [(ngModel)] ="customer.pin" />
+            </mat-form-field>
+          </div>
+          
+           <div>
+          <button mat-raised-button color="primary"  (click)="update()">Update</button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
